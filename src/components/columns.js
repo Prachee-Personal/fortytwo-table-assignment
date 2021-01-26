@@ -56,8 +56,7 @@ export const COLUMNS = [
     Header: 'DateTime Created',
     disableFilters:true,
     accessor: d => {
-      return Moment(d.updated_at)
-        .local()
+      return Moment(d.dateTimeCreated)
         .format("DD/MM/YYYY hh:mm:ss A")
     }
   },
@@ -67,8 +66,7 @@ export const COLUMNS = [
     Header: 'DateTime Modified',
     disableFilters:true,
     accessor: d => {
-      return Moment(d.updated_at)
-        .local()
+      return Moment(d.dateTimeModified)
         .format("DD/MM/YYYY hh:mm:ss A")
     }
   },
